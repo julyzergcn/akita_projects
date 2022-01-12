@@ -17,6 +17,9 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+    "@datorama/akita": "file:akita/dist/packages/akita",
+    "@datorama/akita-ng-entity-service": "^7.0.0",
+    "@datorama/akita-ng-router-store": "file:akita/dist/packages/ng-router-store",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -25,6 +28,7 @@
     "@angular-devkit/build-angular": "~13.1.2",
     "@angular/cli": "~13.1.2",
     "@angular/compiler-cli": "~13.1.0",
+    "@datorama/akita-ngdevtools": "file:akita/dist/packages/ng-devtools",
     "@types/node": "^12.11.1",
     "typescript": "~4.5.2"
   }
