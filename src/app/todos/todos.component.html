@@ -1,8 +1,10 @@
 
 <h3>Todos</h3>
 
+<app-add-todo></app-add-todo>
+
 <div *ngIf="loaders.get$ | async; else todoList">
-  Loading ...
+  Loading todo list ...
 </div>
 
 <ng-template #todoList>

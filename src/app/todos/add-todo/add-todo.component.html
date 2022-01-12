@@ -1,0 +1,13 @@
+
+<div *ngIf="loaders.add$ | async; else addTodoForm">
+  Adding todo ...
+</div>
+
+<ng-template #addTodoForm>
+  <form [formGroup]="form"
+    (ngSubmit)="form.valid && addTodo()"
+  >
+    <input type="text" placeholder="Title" formControlName="title">
+    <button type="submit">Add Todo</button>
+  </form>
+</ng-template>

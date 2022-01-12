@@ -16,3 +16,4 @@
     ng g module todos --module=app --route=todos --routing
     ng g @datorama/akita:feature todos --flat=false --entityService="Http"
 
+    ng g component todos/add-todo
