@@ -13,3 +13,5 @@
     npm i akita/dist/packages/akita
 
     ng g component home
+    ng g module todos --module=app --route=todos --routing
+

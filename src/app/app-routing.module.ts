@@ -7,7 +7,8 @@ const routes: Routes = [
     path: '',
     pathMatch: 'full',
     component: HomeComponent
-  }
+  },
+  { path: 'todos', loadChildren: () => import('./todos/todos.module').then(m => m.TodosModule) }
 ];
 
 @NgModule({
