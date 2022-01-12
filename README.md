@@ -12,4 +12,4 @@
     cd ../../..
     npm i akita/dist/packages/akita
 
-    ng g @datorama/akita:feature todos
+    ng g component home
