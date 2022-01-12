@@ -1,1 +1,18 @@
-<p>todos works!</p>
+
+<h3>Todos</h3>
+
+<div *ngIf="loaders.get$ | async; else todoList">
+  Loading ...
+</div>
+
+<ng-template #todoList>
+  <ul>
+    <li *ngFor="let todo of todos$ | async">
+      {{ todo.title }}
+      <small><i>
+        {{ todo.isComplete ? ' (Complete)' : ''}}
+      </i></small>
+    </li>
+  </ul>
+</ng-template>
+
